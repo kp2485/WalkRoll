@@ -9,16 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
+        VStack {
             NavigationView {
                     List {
-                        NavigationLink("Join a Walk & Roll", destination: MapView())
+                        ShortProgressView()
+                        NavigationLink("Join a Walk & Roll", destination: JoinAWalkAndRoll())
+                        NavigationLink("Plan a Walk & Roll", destination: PlanAWalkAndRoll())
+                        NavigationLink("Walk & Roll Partners", destination: WalkAndRollPartners())
+                        NavigationLink("Walk & Roll Groups", destination: PlanAWalkAndRoll())
+                        NavigationLink("Contact Us", destination: ContactUs())
                     }
-                    .navigationTitle("Welcome, Otis!")
+                    .navigationTitle(Text("Welcome, Otis!"))
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Button("My Settings") {
-                                print("test")
+                                MySettings()
                             }
                         }
                     }
