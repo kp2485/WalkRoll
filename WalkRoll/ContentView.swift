@@ -9,7 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        MapView()
+        ZStack {
+            NavigationView {
+                    List {
+                        NavigationLink("Join a Walk & Roll", destination: MapView())
+                    }
+                    .navigationTitle("Welcome, Otis!")
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button("My Settings") {
+                                print("test")
+                            }
+                        }
+                    }
+                
+            }
+        }
     }
 }
 
