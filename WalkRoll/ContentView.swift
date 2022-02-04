@@ -16,27 +16,27 @@ struct ContentView: View {
                     List {
                         NavigationLink(destination: JoinAWalkAndRoll()) {
                             Text("Join a Walk & Roll")
-                                .font(.headline)
+                                .font(.title2)
                         }
                         NavigationLink(destination: PlanAWalkAndRoll()) {
                             Text("Plan a Walk & Roll")
-                                .font(.headline)
+                                .font(.title2)
                         }
                         NavigationLink(destination: WalkAndRollPartners()) {
                             Text("Walk & Roll Partners")
-                                .font(.headline)
+                                .font(.title2)
                         }
                         NavigationLink(destination: PlanAWalkAndRoll()) {
                             Text("Walk & Roll Groups")
-                                .font(.headline)
+                                .font(.title2)
                         }
                         NavigationLink(destination: ContactUs()) {
                             Text("Contact Us")
-                                .font(.headline)
+                                .font(.title2)
                         }
                     }
                     .navigationTitle(Text("Welcome, Otis!"))
-                    
+                    .opacity(0.90)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Button("My Settings") {
