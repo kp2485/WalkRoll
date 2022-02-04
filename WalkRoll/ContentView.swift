@@ -11,15 +11,32 @@ struct ContentView: View {
     var body: some View {
         VStack {
             NavigationView {
+                VStack {
+                    ShortProgressView()
                     List {
-                        ShortProgressView()
-                        NavigationLink("Join a Walk & Roll", destination: JoinAWalkAndRoll())
-                        NavigationLink("Plan a Walk & Roll", destination: PlanAWalkAndRoll())
-                        NavigationLink("Walk & Roll Partners", destination: WalkAndRollPartners())
-                        NavigationLink("Walk & Roll Groups", destination: PlanAWalkAndRoll())
-                        NavigationLink("Contact Us", destination: ContactUs())
+                        NavigationLink(destination: JoinAWalkAndRoll()) {
+                            Text("Join a Walk & Roll")
+                                .font(.headline)
+                        }
+                        NavigationLink(destination: PlanAWalkAndRoll()) {
+                            Text("Plan a Walk & Roll")
+                                .font(.headline)
+                        }
+                        NavigationLink(destination: WalkAndRollPartners()) {
+                            Text("Walk & Roll Partners")
+                                .font(.headline)
+                        }
+                        NavigationLink(destination: PlanAWalkAndRoll()) {
+                            Text("Walk & Roll Groups")
+                                .font(.headline)
+                        }
+                        NavigationLink(destination: ContactUs()) {
+                            Text("Contact Us")
+                                .font(.headline)
+                        }
                     }
                     .navigationTitle(Text("Welcome, Otis!"))
+                    
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Button("My Settings") {
@@ -27,6 +44,7 @@ struct ContentView: View {
                             }
                         }
                     }
+                }
                 
             }
         }
@@ -36,5 +54,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environment(\.sizeCategory, .accessibilityMedium)
+        
     }
 }
