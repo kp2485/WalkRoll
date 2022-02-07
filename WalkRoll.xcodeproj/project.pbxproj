@@ -19,6 +19,8 @@
 		D649892F27AC7913001DDC88 /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649892E27AC7913001DDC88 /* ContactUs.swift */; };
 		D649893127AC7A36001DDC88 /* MySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649893027AC7A36001DDC88 /* MySettings.swift */; };
 		D649893327AC7EC7001DDC88 /* ShortProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649893227AC7EC7001DDC88 /* ShortProgressView.swift */; };
+		FED394E127B1B5AD00F12E7C /* SplashView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED394E027B1B5AD00F12E7C /* SplashView1.swift */; };
+		FED394E327B1B64B00F12E7C /* SplashView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED394E227B1B64B00F12E7C /* SplashView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		D649892E27AC7913001DDC88 /* ContactUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
 		D649893027AC7A36001DDC88 /* MySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettings.swift; sourceTree = "<group>"; };
 		D649893227AC7EC7001DDC88 /* ShortProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortProgressView.swift; sourceTree = "<group>"; };
+		FED394E027B1B5AD00F12E7C /* SplashView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView1.swift; sourceTree = "<group>"; };
+		FED394E227B1B64B00F12E7C /* SplashView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 			children = (
 				D649891627AB09A2001DDC88 /* WalkRollApp.swift */,
 				D649891827AB09A2001DDC88 /* ContentView.swift */,
+				FED394E027B1B5AD00F12E7C /* SplashView1.swift */,
+				FED394E227B1B64B00F12E7C /* SplashView2.swift */,
 				D649893227AC7EC7001DDC88 /* ShortProgressView.swift */,
 				D649893027AC7A36001DDC88 /* MySettings.swift */,
 				D649892E27AC7913001DDC88 /* ContactUs.swift */,
@@ -169,7 +175,9 @@
 				D649893127AC7A36001DDC88 /* MySettings.swift in Sources */,
 				D649892B27AC7864001DDC88 /* PlanAWalkAndRoll.swift in Sources */,
 				D649892F27AC7913001DDC88 /* ContactUs.swift in Sources */,
+				FED394E327B1B64B00F12E7C /* SplashView2.swift in Sources */,
 				D649893327AC7EC7001DDC88 /* ShortProgressView.swift in Sources */,
+				FED394E127B1B5AD00F12E7C /* SplashView1.swift in Sources */,
 				D649892527AB2B4B001DDC88 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
