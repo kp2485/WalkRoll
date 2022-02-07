@@ -11,7 +11,7 @@ import SwiftUI
 struct ShortProgressView: View {
     var body: some View {
         
-
+        
         
         
         Text("456 Steps Walked Today").frame(height: 200)
@@ -23,3 +23,4 @@ struct ShortProgressView_Previews: PreviewProvider {
         ShortProgressView()
     }
 }
+
