@@ -39,7 +39,7 @@ func fetchHealthData() -> Void {
                     fatalError("*** Unable to calculate the start date ***")
                 }
                 
-                guard let quantityType = HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate) else {
+                guard let quantityType = HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount) else {
                     fatalError("*** Unable to create a step count type ***")
                 }
                 
@@ -61,11 +61,10 @@ func fetchHealthData() -> Void {
                         if let quantity = statistics.averageQuantity() {
                             let date = statistics.startDate
                             //for: E.g. for steps it's HKUnit.count()
-                            let value = quantity.doubleValue(for: HKUnit(from: "count/min"))
+                            let value = quantity.doubleValue(for: HKUnit.count())
                             print("done")
                             print(value)
                             print(date)
-                            
                         }
                     }
                     
