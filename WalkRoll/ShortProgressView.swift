@@ -12,7 +12,7 @@ func fetchHealthData() -> Void {
     let healthStore = HKHealthStore()
     if HKHealthStore.isHealthDataAvailable() {
         let readData = Set([
-            HKObjectType.quantityType(forIdentifier: .heartRate)!
+            HKObjectType.quantityType(forIdentifier: .stepCount)!
         ])
         
         healthStore.requestAuthorization(toShare: [], read: readData) { (success, error) in
