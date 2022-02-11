@@ -9,8 +9,41 @@ import SwiftUI
 
 struct MySettings: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            Form{
+                Section(header: Text("Profile")){
+    //                Label("NicName")
+                    
+                    Toggle(isOn: .constant(false), label: {
+                      Text("My Friends")
+                    })
+                    Toggle(isOn: .constant(false), label: {
+                      Text("My Groups")
+                    })
+                    
+                }
+                
+                Section(header: Text("Walk and Roll")){
+                    Toggle(isOn: .constant(true), label: {
+                      Text("Able To Assist")
+                    })
+                    Toggle(isOn: .constant(true), label: {
+                      Text("May Need Assistance")
+                    })
+                    Toggle(isOn: .constant(true), label: {
+                      Text("I Use A Walking Device")
+                    })
+                    Toggle(isOn: .constant(false), label: {
+                      Text("I Use A Wheelchair")
+                    })
+     
+                }
+        }
+            
+        }
+        
     }
+    
 }
 
 struct MySettings_Previews: PreviewProvider {
