@@ -40,7 +40,7 @@ struct MySettings: View {
                 }
         }
             
-        }
+        }.navigationTitle("My Settings")
         
     }
     
