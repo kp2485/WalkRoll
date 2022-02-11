@@ -45,7 +45,6 @@ func fetchHealthData() -> Void {
                 
                 let query = HKStatisticsCollectionQuery(quantityType: quantityType,
                                                         quantitySamplePredicate: nil,
-                                                        options: .discreteAverage,
                                                         anchorDate: anchorDate,
                                                         intervalComponents: interval as DateComponents)
                 
@@ -79,6 +78,7 @@ func fetchHealthData() -> Void {
         }
     }
 }
+
 struct ShortProgressView: View {
     var body: some View {
         Button(action: fetchHealthData) {
@@ -86,7 +86,6 @@ struct ShortProgressView: View {
                 .font(.largeTitle)
                 .bold()
                 .foregroundColor(.white)
-            
         }
         .padding()
         .background(Color.blue)
