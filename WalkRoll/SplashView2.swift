@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct SplashView2: View {
+    @State var isActive:Bool = false
     var body: some View {
-        Image("Splash2")
+        VStack {
+            if self.isActive {
+                // 3.
+                ContentView()
+                    
+            }
+            else{
+        Image("SplashSplash")
             .resizable()
-            .padding([.leading, .bottom, .trailing], -4.0)
+            .renderingMode(.original)
+            .padding(.horizontal, -15.0)
             .scaledToFit()
     }
-}
+}.onAppear {
+    // 6.
+    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        // 7.
+        withAnimation {
+            self.isActive = true
+        }
+    }
+    }
+        }
+    }
 
 struct SplashView2_Previews: PreviewProvider {
     static var previews: some View {
