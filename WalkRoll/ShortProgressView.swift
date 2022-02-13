@@ -83,11 +83,11 @@ struct ShortProgressView: View {
     var body: some View {
         Button(action: fetchHealthData) {
             Text("Fetch steps")
-                .font(.largeTitle)
+                .font(.title2)
                 .bold()
                 .foregroundColor(.white)
         }
-        .padding()
+        .padding(8)
         .background(Color.blue)
         .cornerRadius(20)
     }
