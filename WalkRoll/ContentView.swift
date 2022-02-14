@@ -12,6 +12,7 @@ struct ContentView: View {
         VStack {
             NavigationView {
                 VStack {
+                    Text("Today is a great day to get outside!")
                     ShortProgressView()
                     List {
                         NavigationLink(destination: JoinAWalkAndRoll()) {
@@ -39,8 +40,8 @@ struct ContentView: View {
                     .opacity(0.90)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
-                            Button("My Settings") {
-                                MySettings()
+                            NavigationLink(destination: MySettings()) {
+                                Text ("My Settings")
                             }
                         }
                     }
