@@ -13,7 +13,12 @@ struct ContentView: View {
             NavigationView {
                 VStack {
                     Text("Today is a great day to get outside!")
+                        .italic()
+                        .fontWeight(.light)
+                        .font(.title3)
+                        .padding(.top)
                     ShortProgressView()
+                        .padding()
                     List {
                         NavigationLink(destination: JoinAWalkAndRoll()) {
                             Text("Join a Walk & Roll")
@@ -46,7 +51,6 @@ struct ContentView: View {
                         }
                     }
                 }
-                
             }
         }
     }

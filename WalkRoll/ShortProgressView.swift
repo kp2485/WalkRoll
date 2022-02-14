@@ -81,6 +81,9 @@ func fetchHealthData() -> Void {
 
 struct ShortProgressView: View {
     var body: some View {
+        
+        CircularProgressView()
+        
         Button(action: fetchHealthData) {
             Text("Fetch steps")
                 .font(.title2)
