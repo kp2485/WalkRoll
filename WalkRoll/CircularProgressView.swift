@@ -14,7 +14,7 @@ struct CircularProgressView: View {
     var body: some View {
         ZStack {
             Circle()
-                .stroke(Color.gray, lineWidth: 20)
+                .stroke(Color.gray, lineWidth: 30)
                 .opacity(0.3)
             Circle()
                 .trim(from: 0, to: 0.42)
@@ -22,11 +22,14 @@ struct CircularProgressView: View {
                 .rotationEffect(.degrees(-90))
                 .overlay(Text("\(Int(progress * 100.0))%").font(.title))
         }
+        .frame(height: 120)
     }
 }
 
 struct CircularProgressView_Previews: PreviewProvider {
     static var previews: some View {
         CircularProgressView()
+        CircularProgressView()
+            
     }
 }

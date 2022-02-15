@@ -17,28 +17,42 @@ struct ContentView: View {
                         .fontWeight(.light)
                         .font(.title3)
                         .padding(.top)
-                    ShortProgressView()
-                        .padding()
+                    
                     List {
                         NavigationLink(destination: JoinAWalkAndRoll()) {
-                            Text("Join a Walk & Roll")
-                                .font(.title2)
+                            HStack {
+                                Text("Join a Walk & Roll")
+                                    .font(.title2)
+                                Image(systemName: "figure.walk")
+                            }
                         }
                         NavigationLink(destination: PlanAWalkAndRoll()) {
-                            Text("Plan a Walk & Roll")
-                                .font(.title2)
+                            HStack {
+                                Text("Plan a Walk & Roll")
+                                    .font(.title2)
+                                Image(systemName: "map")
+                            }
                         }
                         NavigationLink(destination: WalkAndRollPartners()) {
-                            Text("Walk & Roll Partners")
-                                .font(.title2)
+                            HStack {
+                                Text("Walk & Roll Partners")
+                                    .font(.title2)
+                                Image(systemName: "person.fill")
+                            }
                         }
                         NavigationLink(destination: PlanAWalkAndRoll()) {
-                            Text("Walk & Roll Groups")
-                                .font(.title2)
+                            HStack {
+                                Text("Walk & Roll Groups")
+                                    .font(.title2)
+                                Image(systemName: "person.3.fill")
+                            }
                         }
                         NavigationLink(destination: ContactUs()) {
-                            Text("Contact Us")
-                                .font(.title2)
+                            HStack {
+                                Text("Contact Us")
+                                    .font(.title2)
+                                Image(systemName: "mail")
+                            }
                         }
                     }
                     .navigationTitle(Text("Welcome, Otis!"))
@@ -50,8 +64,17 @@ struct ContentView: View {
                             }
                         }
                     }
+                    
+                    ShortProgressView()
+                        .padding(.bottom)
+                    
+                    ActivityFeedView()
+                        
+                    
+                    
                 }
             }
+            .edgesIgnoringSafeArea(.all)
         }
     }
 }

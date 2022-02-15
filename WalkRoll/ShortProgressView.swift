@@ -80,19 +80,38 @@ func fetchHealthData() -> Void {
 }
 
 struct ShortProgressView: View {
+    
+    @State var userHasSetGoal: Bool = false
+    
     var body: some View {
-        
-        CircularProgressView()
-        
-        Button(action: fetchHealthData) {
-            Text("Fetch steps")
-                .font(.title2)
-                .bold()
-                .foregroundColor(.white)
+        VStack {
+            HStack {
+                
+                if userHasSetGoal == true {
+                    CircularProgressView()
+                        .padding()
+                } else {
+                    Button(action: fetchHealthData) {
+                        Text("Set a goal   ")
+                            .font(.title2)
+                            .bold()
+                            .foregroundColor(.white)
+                    }
+                    .padding(8)
+                    .background(Color.blue)
+                    .cornerRadius(20)
+                }
+                
+                Text("You have travelled\n436 steps so far today.")
+                    .font(.title2)
+                    .fontWeight(.light)
+            }
+            .padding()
+            
         }
-        .padding(8)
-        .background(Color.blue)
-        .cornerRadius(20)
+        
+        
+        
     }
 }
 
