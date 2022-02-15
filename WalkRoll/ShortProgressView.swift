@@ -11,8 +11,8 @@ import Combine
 
 struct ShortProgressView: View {
     
-    @State var userHasSetGoal: Bool = false
-    @State var stepsAuthorized: Bool = false
+    @State var userHasSetGoal: Bool = true
+    @State var stepsAuthorized: Bool = true
     @State private var stepCount: String = "504"
     @State var userGoal: String = "1200"
     @State private var showingPopover = false

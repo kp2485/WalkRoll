@@ -84,6 +84,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environment(\.sizeCategory, .large)
-        
+        ContentView()
+            .environment(\.sizeCategory, .accessibilityExtraLarge)
     }
 }
