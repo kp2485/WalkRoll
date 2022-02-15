@@ -24,6 +24,7 @@
 		D6E1A23B27BBEE7200A9FBBD /* ActivityFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A23A27BBEE7200A9FBBD /* ActivityFeedView.swift */; };
 		FED394E127B1B5AD00F12E7C /* SplashView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED394E027B1B5AD00F12E7C /* SplashView1.swift */; };
 		FED394E327B1B64B00F12E7C /* SplashView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED394E227B1B64B00F12E7C /* SplashView2.swift */; };
+		FEF65D7A27BC4B3A002B2980 /* HiddenNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF65D7927BC4B3A002B2980 /* HiddenNavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		D6E1A23A27BBEE7200A9FBBD /* ActivityFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedView.swift; sourceTree = "<group>"; };
 		FED394E027B1B5AD00F12E7C /* SplashView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView1.swift; sourceTree = "<group>"; };
 		FED394E227B1B64B00F12E7C /* SplashView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView2.swift; sourceTree = "<group>"; };
+		FEF65D7927BC4B3A002B2980 /* HiddenNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenNavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				D6E1A23A27BBEE7200A9FBBD /* ActivityFeedView.swift */,
 				D64897AE27BABC57009B72BC /* CircularProgressView.swift */,
 				D649893027AC7A36001DDC88 /* MySettings.swift */,
+				FEF65D7927BC4B3A002B2980 /* HiddenNavBar.swift */,
 				D649892E27AC7913001DDC88 /* ContactUs.swift */,
 				D649892C27AC789D001DDC88 /* WalkAndRollPartners.swift */,
 				D649892A27AC7864001DDC88 /* PlanAWalkAndRoll.swift */,
@@ -199,6 +202,7 @@
 				D6E1A23B27BBEE7200A9FBBD /* ActivityFeedView.swift in Sources */,
 				D649892F27AC7913001DDC88 /* ContactUs.swift in Sources */,
 				FED394E327B1B64B00F12E7C /* SplashView2.swift in Sources */,
+				FEF65D7A27BC4B3A002B2980 /* HiddenNavBar.swift in Sources */,
 				D649893327AC7EC7001DDC88 /* ShortProgressView.swift in Sources */,
 				FED394E127B1B5AD00F12E7C /* SplashView1.swift in Sources */,
 				D64897AF27BABC57009B72BC /* CircularProgressView.swift in Sources */,
