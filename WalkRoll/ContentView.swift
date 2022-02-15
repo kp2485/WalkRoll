@@ -12,18 +12,13 @@ struct ContentView: View {
         VStack {
             NavigationView {
                 VStack {
-                    Text("Today is a great day to get outside!")
-                        .italic()
-                        .fontWeight(.light)
-                        .font(.title3)
-                        .padding(.top)
-                    
                     List {
                         NavigationLink(destination: JoinAWalkAndRoll()) {
                             HStack {
                                 Text("Join a Walk & Roll")
                                     .font(.title2)
                                 Image(systemName: "figure.walk")
+                                Image(systemName: "figure.roll")
                             }
                         }
                         NavigationLink(destination: PlanAWalkAndRoll()) {
@@ -54,9 +49,11 @@ struct ContentView: View {
                                 Image(systemName: "mail")
                             }
                         }
+                        
                     }
                     .navigationTitle(Text("Welcome, Otis!"))
                     .opacity(0.90)
+                    .edgesIgnoringSafeArea(.bottom)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             NavigationLink(destination: MySettings()) {
@@ -64,18 +61,22 @@ struct ContentView: View {
                             }
                         }
                     }
-                    
-                    ShortProgressView()
-                        .padding(.bottom)
-                    
-                    ActivityFeedView()
-                        
-                    
-                    
+
                 }
             }
-            .edgesIgnoringSafeArea(.all)
+            Text("Today is a great day to get outside! ⛅️")
+                .italic()
+                .fontWeight(.light)
+                .font(.title3)
+                .padding(.top)
+                .multilineTextAlignment(.leading)
+            
+            ShortProgressView()
+            
+            ActivityFeedView()
+            
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

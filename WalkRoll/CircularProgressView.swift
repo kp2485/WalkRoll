@@ -20,9 +20,10 @@ struct CircularProgressView: View {
                 .trim(from: 0, to: 0.42)
                 .stroke(Color.blue, lineWidth: 20)
                 .rotationEffect(.degrees(-90))
-                .overlay(Text("\(Int(progress * 100.0))%").font(.title))
+                .overlay(Text("\(Int(progress * 100.0))%").font(.system(size: 30)))
         }
-        .frame(height: 120)
+        .frame(width: 105, height: 105)
+        .padding()
     }
 }
 
