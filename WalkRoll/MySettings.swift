@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct MySettings: View {
+    @State var name: String = "Otis"
+    
     var body: some View {
+
         NavigationView{
             Form{
                 Section(header: Text("Profile")){
@@ -42,6 +45,7 @@ struct MySettings: View {
             
         }.navigationTitle("My Settings")
         
+
     }
     
 }
@@ -51,3 +55,4 @@ struct MySettings_Previews: PreviewProvider {
         MySettings()
     }
 }
+
