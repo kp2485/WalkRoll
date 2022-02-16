@@ -64,12 +64,12 @@ struct ContentView: View {
 
                 }
             }
-            Text("Today is a great day to get outside! ⛅️")
-                .italic()
-                .fontWeight(.light)
-                .font(.title3)
-                .padding(.top)
-                .multilineTextAlignment(.leading)
+//            Text("Today is a great day to get outside! ⛅️")
+//                .italic()
+//                .fontWeight(.light)
+//                .font(.title3)
+//                .padding(.top)
+//                .multilineTextAlignment(.leading)
             
             ShortProgressView()
             
@@ -85,6 +85,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .environment(\.sizeCategory, .large)
         ContentView()
-            .environment(\.sizeCategory, .accessibilityExtraLarge)
+            .environment(\.sizeCategory, .medium)
     }
 }
