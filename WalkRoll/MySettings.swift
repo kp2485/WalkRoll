@@ -20,7 +20,6 @@ struct MySettings: View {
             
             Form{
                 
-                Section(header: Text("Walk and Roll")){
                     Toggle(isOn: $AbleToAssist, label: {
                       Text("Able To Assist")
                     })
@@ -37,7 +36,8 @@ struct MySettings: View {
                     })
                     
                     TextField("Enter additional assistance needed", text:$AdditionalAssistance)
-                }
+                        .frame(height: 100)
+                
                 
         }
             .hiddenNavigationBarStyle()
