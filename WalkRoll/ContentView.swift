@@ -7,73 +7,109 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    
+    let screenWidth  = UIScreen.main.bounds.size.width
+    
     var body: some View {
         VStack {
             NavigationView {
                 VStack {
+                    
+                    MapView()
+                        .frame(height: screenWidth)
+                    
+                    ZStack {
+                        LinearGradient(gradient: Gradient(colors: [.blue, .white, .green]), startPoint: .top, endPoint: .bottom)
+                            .frame(height:50)
+                            .opacity(0.35)
+                        HStack {
+                            Image(systemName: "figure.walk")
+                            Text("Upcoming Walk & Rolls")
+                                .font(.title)
+                                .fontWeight(.medium)
+                            Image(systemName: "figure.roll")
+                        }
+                    }
+                    
                     List {
                         NavigationLink(destination: JoinAWalkAndRoll()) {
                             HStack {
-                                Text("Join a Walk & Roll")
+                                Text("Boston-Edison AM Crew")
                                     .font(.title2)
-                                Image(systemName: "figure.walk")
-                                Image(systemName: "figure.roll")
+                                Spacer()
+                                Text("0.2 m")
+                                    .fontWeight(.light)
                             }
                         }
                         NavigationLink(destination: PlanAWalkAndRoll()) {
                             HStack {
-                                Text("Plan a Walk & Roll")
+                                Text("Sacred Heart Track")
                                     .font(.title2)
-                                Image(systemName: "map")
-                            }
-                        }
-                        NavigationLink(destination: WalkAndRollPartners()) {
-                            HStack {
-                                Text("Walk & Roll Partners")
-                                    .font(.title2)
-                                Image(systemName: "person.fill")
-                            }
-                        }
-                        NavigationLink(destination: PlanAWalkAndRoll()) {
-                            HStack {
-                                Text("Walk & Roll Groups")
-                                    .font(.title2)
-                                Image(systemName: "person.3.fill")
-                            }
-                        }
-                        NavigationLink(destination: ContactUs()) {
-                            HStack {
-                                Text("Contact Us")
-                                    .font(.title2)
-                                Image(systemName: "mail")
+                                Spacer()
+                                Text("0.5 m")
+                                    .fontWeight(.light)
                             }
                         }
                         
                     }
-                    .navigationTitle(Text("Welcome, Otis!"))
-                    .opacity(0.90)
-                    .edgesIgnoringSafeArea(.bottom)
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            NavigationLink(destination: MySettings()) {
-                                Text ("My Settings")
+                    .onAppear(perform: {
+                            UITableView.appearance().contentInset.top = -15
+                        })
+                    
+                    
+                }
+                
+                .navigationBarTitleDisplayMode(.inline)
+                .opacity(0.90)
+                .edgesIgnoringSafeArea(.bottom)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        
+                        HStack {
+                            NavigationLink (destination: MySettings()) {
+                                Image(systemName: "gearshape.fill")
+                                    .font(.title3)
                             }
+                            
+                            Spacer()
+                            
+                            Text ("Welcome, Otis!")
+                                .font(.largeTitle)
+                            
+                            Spacer()
+                            
+                            NavigationLink (destination: PlanAWalkAndRoll()) {
+                                Image(systemName: "plus")
+                                    .font(.title3)
+                            }
+                            
                         }
+                        
                     }
-
+//                    ToolbarItem(placement: .navigationBarLeading) {
+//                        NavigationLink(destination: MySettings()) {
+//                            Text ("My Settings")
+//                        }
+//                    }
+//                    ToolbarItem(placement: .navigationBarTrailing) {
+//                        NavigationLink(destination: MySettings()) {
+//                            Text ("Plan a Walk & Roll")
+//                        }
+//                    }
                 }
             }
-//            Text("Today is a great day to get outside! ⛅️")
-//                .italic()
-//                .fontWeight(.light)
-//                .font(.title3)
-//                .padding(.top)
-//                .multilineTextAlignment(.leading)
+            //            Text("Today is a great day to get outside! ⛅️")
+            //                .italic()
+            //                .fontWeight(.light)
+            //                .font(.title3)
+            //                .padding(.top)
+            //                .multilineTextAlignment(.leading)
             
-            ShortProgressView()
+            //            ShortProgressView()
             
-            ActivityFeedView()
+            //            ActivityFeedView()
             
         }
         .edgesIgnoringSafeArea(.all)
@@ -85,6 +121,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .environment(\.sizeCategory, .large)
         ContentView()
-            .environment(\.sizeCategory, .medium)
+            .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
     }
 }
