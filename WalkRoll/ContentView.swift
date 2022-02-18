@@ -126,7 +126,7 @@ struct ContentView: View {
                             
                             Spacer()
                             
-                            Text ("Welcome, Poindexter!")
+                            Text ("Welcome, Otis!")
                                 .font(.largeTitle)
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.5)
@@ -155,6 +155,7 @@ struct ContentView: View {
                     //                    }
                 }
             }
+            
             //            Text("Today is a great day to get outside! ⛅️")
             //                .italic()
             //                .fontWeight(.light)
