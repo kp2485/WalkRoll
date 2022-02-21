@@ -24,7 +24,7 @@ struct ContentView: View {
                     MapView()
                         .frame(height: screenWidth)
                     
-                    Text("Upcoming Walk & Rolls")
+                    Text("Nearby Walk & Rolls")
                         .font(.title)
                         .fontWeight(.medium)
                         .padding(.horizontal)

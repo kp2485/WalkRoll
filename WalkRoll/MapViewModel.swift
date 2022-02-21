@@ -23,7 +23,7 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate 
         if CLLocationManager.locationServicesEnabled() {
             // Initialize locationManager as an optional with best location accuracy
             locationManager = CLLocationManager()
-//            locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager?.desiredAccuracy = kCLLocationAccuracyBest
             // Set the delegate and force unwraps it
             locationManager!.delegate = self
         } else {
