@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B358406F27C434E300562A5D /* DetailView.swift2 in Resources */ = {isa = PBXBuildFile; fileRef = B358406E27C434E300562A5D /* DetailView.swift2 */; };
 		D64897A727B7057A009B72BC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64897A627B7057A009B72BC /* HealthKit.framework */; };
 		D64897AF27BABC57009B72BC /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64897AE27BABC57009B72BC /* CircularProgressView.swift */; };
 		D649891727AB09A2001DDC88 /* WalkRollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649891627AB09A2001DDC88 /* WalkRollApp.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B358406E27C434E300562A5D /* DetailView.swift2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DetailView.swift2; sourceTree = "<group>"; };
 		D64897A327B6F940009B72BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D64897A427B7057A009B72BC /* WalkRoll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalkRoll.entitlements; sourceTree = "<group>"; };
 		D64897A627B7057A009B72BC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -100,6 +102,7 @@
 				D649891627AB09A2001DDC88 /* WalkRollApp.swift */,
 				D649891827AB09A2001DDC88 /* ContentView.swift */,
 				D6BF314427C41478009BC39C /* DetailView.swift */,
+				B358406E27C434E300562A5D /* DetailView.swift2 */,
 				D6BF314627C41726009BC39C /* OnAWalkView.swift */,
 				FED394E027B1B5AD00F12E7C /* SplashView1.swift */,
 				FED394E227B1B64B00F12E7C /* SplashView2.swift */,
@@ -188,6 +191,7 @@
 			files = (
 				D649891E27AB09A4001DDC88 /* Preview Assets.xcassets in Resources */,
 				D649891B27AB09A4001DDC88 /* Assets.xcassets in Resources */,
+				B358406F27C434E300562A5D /* DetailView.swift2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
