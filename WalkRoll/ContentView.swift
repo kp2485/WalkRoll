@@ -29,7 +29,7 @@ struct ContentView: View {
                     .minimumScaleFactor(0.5)
                     
                     List {
-                        NavigationLink(destination: JoinAWalkAndRoll()) {
+                        NavigationLink(destination: DetailView()) {
                             HStack {
                                 Text("Boston-Edison AM Crew")
                                     .font(.title2)
@@ -43,7 +43,7 @@ struct ContentView: View {
                             }
                             .minimumScaleFactor(0.5)
                         }
-                        NavigationLink(destination: PlanAWalkAndRoll()) {
+                        NavigationLink(destination: DetailView()) {
                             HStack {
                                 Text("Sacred Heart Track")
                                     .font(.title2)
@@ -57,7 +57,7 @@ struct ContentView: View {
                             }
                             .minimumScaleFactor(0.5)
                         }
-                        NavigationLink(destination: PlanAWalkAndRoll()) {
+                        NavigationLink(destination: DetailView()) {
                             HStack {
                                 Text("Central HS Track")
                                     .font(.title2)
@@ -71,7 +71,7 @@ struct ContentView: View {
                             }
                             .minimumScaleFactor(0.5)
                         }
-                        NavigationLink(destination: PlanAWalkAndRoll()) {
+                        NavigationLink(destination: DetailView()) {
                             HStack {
                                 Text("West Side Walkers")
                                     .font(.title2)
@@ -85,7 +85,7 @@ struct ContentView: View {
                             }
                             .minimumScaleFactor(0.5)
                         }
-                        NavigationLink(destination: PlanAWalkAndRoll()) {
+                        NavigationLink(destination: DetailView()) {
                             HStack {
                                 Text("Palmer Park")
                                     .font(.title2)
