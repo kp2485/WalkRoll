@@ -8,33 +8,24 @@
 import SwiftUI
 
 
-struct DetailView: View {
+struct OnAWalkView: View {
     
     let screenWidth  = UIScreen.main.bounds.size.width
-    let screenHeight = UIScreen.main.bounds.size.height
     
     var body: some View {
         VStack {
             NavigationView {
                 VStack {
                     
-                    Spacer()
-                        .frame(height: screenHeight * 0.005)
-                    
                     MapView()
-                        .frame(width: screenWidth, height: screenHeight * 0.50)
+                        .frame(height: screenWidth)
+
                     
-                    Text("Walk & Roll Name")
-                        .font(.title)
-                        .fontWeight(.medium)
-                        .padding(.horizontal)
-                        .padding(.vertical, 1)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.5)
                     
-                    Text("Distance:")
                     
                     Spacer()
+                    
+                    ShortProgressView()
                     
                 }
                 
@@ -52,7 +43,7 @@ struct DetailView: View {
                             
                             Spacer()
                             
-                            Text ("Welcome, Otis!")
+                            Text ("Walk & Roll Name")
                                 .font(.largeTitle)
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.5)
@@ -98,12 +89,12 @@ struct DetailView: View {
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
+struct OnAWalkView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        OnAWalkView()
             .environment(\.sizeCategory, .medium)
             
-        DetailView()
+        OnAWalkView()
         
             .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
     }
