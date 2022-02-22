@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct DetailView: View {
+struct DetailView2: View {
     
     let screenWidth  = UIScreen.main.bounds.size.width
     let screenHeight = UIScreen.main.bounds.size.height
@@ -39,7 +39,7 @@ struct DetailView: View {
                         .minimumScaleFactor(0.5)
                         
                     
-                    Text("This is a Walk @ Roll located at the Historic Roman Catholic church complex listed as one of the National Register of Historic Places in 1980. This site has a sizable track consisting of recurring walks at 6.00 pm, every Wednesday and Friday.”)
+                    Text("This is a Walk & Roll located at the Historic Roman Catholic church complex listed as one of the National Register of Historic Places in 1980. This site has a sizable track consisting of recurring walks at 6.00 pm, every Wednesday and Friday")
                         .multilineTextAlignment(.center)
                         .lineLimit(6)
                         .padding(.bottom)
@@ -127,13 +127,13 @@ struct DetailView: View {
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
+struct DetailView2_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView2()
             .environment(\.sizeCategory, .medium)
 .previewInterfaceOrientation(.portraitUpsideDown)
             
-        DetailView()
+        DetailView2()
         
             .environment(\.sizeCategory, .accessibilityExtraExtraLarge)
     }
