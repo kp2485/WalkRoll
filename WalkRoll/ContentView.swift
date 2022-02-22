@@ -7,54 +7,182 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    
+    let screenWidth  = UIScreen.main.bounds.size.width
+    let screenHeight = UIScreen.main.bounds.size.height
+    
     var body: some View {
         VStack {
             NavigationView {
                 VStack {
-                    ShortProgressView()
+                    
+                    Spacer()
+                        .frame(height: screenHeight * 0.005)
+                    
+                    MapView()
+                        .frame(height: screenWidth)
+                    
+                    Text("Upcoming Walk & Rolls")
+                        .font(.title)
+                        .fontWeight(.medium)
+                        .padding(.horizontal)
+                        .padding(.vertical, 1)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.5)
+                    
                     List {
-                        NavigationLink(destination: JoinAWalkAndRoll()) {
-                            Text("Join a Walk & Roll")
-                                .font(.title2)
-                        }
-                        NavigationLink(destination: PlanAWalkAndRoll()) {
-                            Text("Plan a Walk & Roll")
-                                .font(.title2)
-                        }
-                        NavigationLink(destination: WalkAndRollPartners()) {
-                            Text("Walk & Roll Partners")
-                                .font(.title2)
-                        }
-                        NavigationLink(destination: PlanAWalkAndRoll()) {
-                            Text("Walk & Roll Groups")
-                                .font(.title2)
-                        }
-                        NavigationLink(destination: ContactUs()) {
-                            Text("Contact Us")
-                                .font(.title2)
-                        }
-                    }
-                    .navigationTitle(Text("Welcome, Otis!"))
-                    .opacity(0.90)
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            Button("My Settings") {
-                                MySettings()
+                        NavigationLink(destination: DetailView()) {
+                            HStack {
+                                Text("Boston-Edison AM Crew")
+                                    .font(.title2)
+                                    .layoutPriority(1)
+                                    .lineLimit(2)
+                                Spacer()
+                                Text("0.2 m")
+                                    .font(.body)
+                                    .fontWeight(.light)
+                                    .lineLimit(1)
                             }
+                            .minimumScaleFactor(0.5)
+                        }
+                        NavigationLink(destination: DetailView()) {
+                            HStack {
+                                Text("Sacred Heart Track")
+                                    .font(.title2)
+                                    .layoutPriority(1)
+                                    .lineLimit(2)
+                                Spacer()
+                                Text("0.5 m")
+                                    .font(.body)
+                                    .fontWeight(.light)
+                                    .lineLimit(1)
+                            }
+                            .minimumScaleFactor(0.5)
+                        }
+                        NavigationLink(destination: DetailView()) {
+                            HStack {
+                                Text("Central HS Track")
+                                    .font(.title2)
+                                    .layoutPriority(1)
+                                    .lineLimit(2)
+                                Spacer()
+                                Text("0.5 m")
+                                    .font(.body)
+                                    .fontWeight(.light)
+                                    .lineLimit(1)
+                            }
+                            .minimumScaleFactor(0.5)
+                        }
+                        NavigationLink(destination: DetailView()) {
+                            HStack {
+                                Text("West Side Walkers")
+                                    .font(.title2)
+                                    .layoutPriority(1)
+                                    .lineLimit(2)
+                                Spacer()
+                                Text("2.2 m")
+                                    .font(.body)
+                                    .fontWeight(.light)
+                                    .lineLimit(1)
+                            }
+                            .minimumScaleFactor(0.5)
+                        }
+                        NavigationLink(destination: DetailView()) {
+                            HStack {
+                                Text("Palmer Park")
+                                    .font(.title2)
+                                    .layoutPriority(1)
+                                    .lineLimit(2)
+                                Spacer()
+                                Text("3.7 m")
+                                    .font(.body)
+                                    .fontWeight(.light)
+                                    .lineLimit(1)
+                            }
+                            .minimumScaleFactor(0.5)
+                        }
+                        HStack {
+                            Spacer()
+                            Text("See more...")
+                            Spacer()
                         }
                     }
+                    .onAppear(perform: {
+                        UITableView.appearance().contentInset.top = -15
+                    })
+                    
+                    
                 }
                 
+                .navigationBarTitleDisplayMode(.inline)
+                .opacity(0.90)
+                .edgesIgnoringSafeArea(.bottom)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        
+                        HStack {
+                            NavigationLink (destination: MySettings()) {
+                                Image(systemName: "gearshape.fill")
+                                    .font(.title3)
+                            }
+                            
+                            Spacer()
+                            
+                            Text ("Welcome, Otis!")
+                                .font(.largeTitle)
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.5)
+                                .frame(maxHeight: .infinity)
+                            
+                            Spacer()
+                            
+                            NavigationLink (destination: PlanAWalkAndRoll()) {
+                                Image(systemName: "plus")
+                                    .font(.title3)
+                            }
+                            
+                        }
+                        .background()
+                        
+                    }
+                    //                    ToolbarItem(placement: .navigationBarLeading) {
+                    //                        NavigationLink(destination: MySettings()) {
+                    //                            Text ("My Settings")
+                    //                        }
+                    //                    }
+                    //                    ToolbarItem(placement: .navigationBarTrailing) {
+                    //                        NavigationLink(destination: MySettings()) {
+                    //                            Text ("Plan a Walk & Roll")
+                    //                        }
+                    //                    }
+                }
             }
+            
+            //            Text("Today is a great day to get outside! ⛅️")
+            //                .italic()
+            //                .fontWeight(.light)
+            //                .font(.title3)
+            //                .padding(.top)
+            //                .multilineTextAlignment(.leading)
+            
+            //            ShortProgressView()
+            
+            //            ActivityFeedView()
+            
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environment(\.sizeCategory, .large)
+            .environment(\.sizeCategory, .medium)
+            
+        ContentView()
         
+            .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
     }
 }

@@ -9,11 +9,13 @@ import MapKit
 
 enum MapDetails {
     static let startingLocation = CLLocationCoordinate2D (latitude: 42.3314, longitude: 83.0458)
+    static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+    static let zoomedSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
 }
 
 final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
-    @Published var region = MKCoordinateRegion(center: MapDetails.startingLocation, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+    @Published var region = MKCoordinateRegion(center: MapDetails.startingLocation, span: MapDetails.defaultSpan)
     
     var locationManager: CLLocationManager?
     
@@ -45,7 +47,7 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate 
         case .authorizedAlways, .authorizedWhenInUse:
             // update region, force unwrapped optional
             region = MKCoordinateRegion(center: locationManager.location!.coordinate,
-                                        span: MKCoordinateSpan( latitudeDelta: 0.01, longitudeDelta: 0.01))
+                                        span: MapDetails.defaultSpan)
         @unknown default:
             break
         }

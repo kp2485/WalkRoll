@@ -11,7 +11,7 @@ import SwiftUI
 struct WalkRollApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView2()
         }
     }
 }
