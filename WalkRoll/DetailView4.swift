@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct DetailView: View {
+struct DetailView4: View {
     
     let screenWidth  = UIScreen.main.bounds.size.width
     let screenHeight = UIScreen.main.bounds.size.height
@@ -33,7 +33,7 @@ struct DetailView: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
                     
-                    Text("Distance: 2.0 miles")
+                    Text("Distance: 2.5 miles")
                         .padding(.bottom, 5.0)
                         .lineLimit(1)
                         .minimumScaleFactor(0.5)
@@ -127,13 +127,13 @@ struct DetailView: View {
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
+struct DetailView4_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView4()
             .environment(\.sizeCategory, .medium)
 .previewInterfaceOrientation(.portraitUpsideDown)
             
-        DetailView()
+        DetailView4()
         
             .environment(\.sizeCategory, .accessibilityExtraExtraLarge)
     }
