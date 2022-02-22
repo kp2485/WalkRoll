@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28431D4427C56B9300E03523 /* DetailView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28431D4327C56B9200E03523 /* DetailView4.swift */; };
 		D64897A727B7057A009B72BC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64897A627B7057A009B72BC /* HealthKit.framework */; };
 		D64897AF27BABC57009B72BC /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64897AE27BABC57009B72BC /* CircularProgressView.swift */; };
 		D649891727AB09A2001DDC88 /* WalkRollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649891627AB09A2001DDC88 /* WalkRollApp.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28431D4327C56B9200E03523 /* DetailView4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView4.swift; sourceTree = "<group>"; };
 		D64897A327B6F940009B72BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D64897A427B7057A009B72BC /* WalkRoll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalkRoll.entitlements; sourceTree = "<group>"; };
 		D64897A627B7057A009B72BC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -102,7 +104,10 @@
 				D649891627AB09A2001DDC88 /* WalkRollApp.swift */,
 				D649891827AB09A2001DDC88 /* ContentView.swift */,
 				D6BF314427C41478009BC39C /* DetailView.swift */,
+				28431D4327C56B9200E03523 /* DetailView4.swift */,
+
 				FE436ACF27C435C2006DC66D /* DetailView5.swift */,
+
 				D6BF314627C41726009BC39C /* OnAWalkView.swift */,
 				FED394E027B1B5AD00F12E7C /* SplashView1.swift */,
 				FED394E227B1B64B00F12E7C /* SplashView2.swift */,
@@ -203,6 +208,7 @@
 			files = (
 				D649892D27AC789D001DDC88 /* WalkAndRollPartners.swift in Sources */,
 				D649891927AB09A2001DDC88 /* ContentView.swift in Sources */,
+				28431D4427C56B9300E03523 /* DetailView4.swift in Sources */,
 				D649892727AB2B71001DDC88 /* MapView.swift in Sources */,
 				D649892927AC77EA001DDC88 /* JoinAWalkAndRoll.swift in Sources */,
 				D649891727AB09A2001DDC88 /* WalkRollApp.swift in Sources */,
