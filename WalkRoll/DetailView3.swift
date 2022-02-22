@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct DetailView: View {
+struct DetailView3: View {
     
     let screenWidth  = UIScreen.main.bounds.size.width
     let screenHeight = UIScreen.main.bounds.size.height
@@ -25,7 +25,7 @@ struct DetailView: View {
                     MapView()
                         .frame(width: screenWidth, height: screenHeight * 0.50)
                     
-                    Text("Boston-Edison AM Crew")
+                    Text("Central HS Track")
                         .font(.title)
                         .fontWeight(.medium)
 //                        .padding(.horizontal)
@@ -33,13 +33,13 @@ struct DetailView: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
                     
-                    Text("Distance: 2.0 miles")
+                    Text("1.7 miles away")
                         .padding(.bottom, 5.0)
                         .lineLimit(1)
                         .minimumScaleFactor(0.5)
                         
                     
-                    Text("This is a Walk & Roll in the Historic Boston-Edison Neighborhood. This area consists of over 900 homes built on four east/west streets, making it one of the largest residential historic districts in the nation. Notable past residents include Henry Ford & Joe Louis. This is a recurring walk at 10 am, every Tuesday & Thursday")
+                    Text("Athletic Track of Historic Central HS, Detroit - located in one of the oldest communities of Detroit, and is the longest-serving public school in the City. Near Midtown Detroit")
                         .multilineTextAlignment(.center)
                         .lineLimit(6)
                         .padding(.bottom)
@@ -127,13 +127,13 @@ struct DetailView: View {
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
+struct DetailView3_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView3()
             .environment(\.sizeCategory, .medium)
 .previewInterfaceOrientation(.portraitUpsideDown)
             
-        DetailView()
+        DetailView3()
         
             .environment(\.sizeCategory, .accessibilityExtraExtraLarge)
     }
