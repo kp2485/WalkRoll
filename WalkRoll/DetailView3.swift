@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct DetailView: View {
+struct DetailView3: View {
     
     let screenWidth  = UIScreen.main.bounds.size.width
     let screenHeight = UIScreen.main.bounds.size.height
@@ -33,13 +33,13 @@ struct DetailView: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
                     
-                    Text("Distance: 1.7 miles")
+                    Text("1.7 miles away")
                         .padding(.bottom, 5.0)
                         .lineLimit(1)
                         .minimumScaleFactor(0.5)
                         
                     
-                    Text("Athletic Track of Historic Central HS, Detroit - located in one of the oldest communities of Detroit, where many great Detroiters attended high school. Near Midtown Detroit")
+                    Text("Athletic Track of Historic Central HS, Detroit - located in one of the oldest communities of Detroit, and is the longest-serving public school in the City. Near Midtown Detroit")
                         .multilineTextAlignment(.center)
                         .lineLimit(6)
                         .padding(.bottom)
@@ -127,13 +127,13 @@ struct DetailView: View {
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
+struct DetailView3_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView3()
             .environment(\.sizeCategory, .medium)
 .previewInterfaceOrientation(.portraitUpsideDown)
             
-        DetailView()
+        DetailView3()
         
             .environment(\.sizeCategory, .accessibilityExtraExtraLarge)
     }
