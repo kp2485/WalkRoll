@@ -15,6 +15,7 @@ struct ContentView: View {
     
     @State private var walkRolls = [WalkRoll]()
     @State private var isPlanAWalkShowing = false
+    @State private var isMySettingsShowing = false
     
     var body: some View {
         VStack {
@@ -126,7 +127,9 @@ struct ContentView: View {
                     ToolbarItem(placement: .principal) {
                         
                         HStack {
-                            NavigationLink (destination: MySettings()) {
+                            Button(action: {
+                                isMySettingsShowing = true
+                            }) {
                                 Image(systemName: "gearshape.fill")
                                     .font(.title3)
                             }
@@ -180,6 +183,9 @@ struct ContentView: View {
         .edgesIgnoringSafeArea(.all)
         .sheet(isPresented: $isPlanAWalkShowing) {
             PlanAWalkAndRoll()
+        }
+        .sheet(isPresented: $isMySettingsShowing) {
+            MySettings()
         }
     }
 }

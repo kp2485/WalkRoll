@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B358407127C43CE200562A5D /* DetailView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B358407027C43CE200562A5D /* DetailView2.swift */; };
 		28431D4427C56B9300E03523 /* DetailView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28431D4327C56B9200E03523 /* DetailView4.swift */; };
+		B358407127C43CE200562A5D /* DetailView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B358407027C43CE200562A5D /* DetailView2.swift */; };
 		D64897A727B7057A009B72BC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64897A627B7057A009B72BC /* HealthKit.framework */; };
 		D64897AF27BABC57009B72BC /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64897AE27BABC57009B72BC /* CircularProgressView.swift */; };
 		D649891727AB09A2001DDC88 /* WalkRollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649891627AB09A2001DDC88 /* WalkRollApp.swift */; };
@@ -17,9 +17,7 @@
 		D649891E27AB09A4001DDC88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D649891D27AB09A4001DDC88 /* Preview Assets.xcassets */; };
 		D649892527AB2B4B001DDC88 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649892427AB2B4B001DDC88 /* MapViewModel.swift */; };
 		D649892727AB2B71001DDC88 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649892627AB2B71001DDC88 /* MapView.swift */; };
-		D649892927AC77EA001DDC88 /* JoinAWalkAndRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649892827AC77EA001DDC88 /* JoinAWalkAndRoll.swift */; };
 		D649892B27AC7864001DDC88 /* PlanAWalkAndRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649892A27AC7864001DDC88 /* PlanAWalkAndRoll.swift */; };
-		D649892D27AC789D001DDC88 /* WalkAndRollPartners.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649892C27AC789D001DDC88 /* WalkAndRollPartners.swift */; };
 		D649892F27AC7913001DDC88 /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649892E27AC7913001DDC88 /* ContactUs.swift */; };
 		D649893127AC7A36001DDC88 /* MySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649893027AC7A36001DDC88 /* MySettings.swift */; };
 		D649893327AC7EC7001DDC88 /* ShortProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649893227AC7EC7001DDC88 /* ShortProgressView.swift */; };
@@ -34,8 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B358407027C43CE200562A5D /* DetailView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView2.swift; sourceTree = "<group>"; };
 		28431D4327C56B9200E03523 /* DetailView4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView4.swift; sourceTree = "<group>"; };
+		B358407027C43CE200562A5D /* DetailView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView2.swift; sourceTree = "<group>"; };
 		D64897A327B6F940009B72BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D64897A427B7057A009B72BC /* WalkRoll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalkRoll.entitlements; sourceTree = "<group>"; };
 		D64897A627B7057A009B72BC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -47,9 +45,7 @@
 		D649891D27AB09A4001DDC88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D649892427AB2B4B001DDC88 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		D649892627AB2B71001DDC88 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		D649892827AC77EA001DDC88 /* JoinAWalkAndRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinAWalkAndRoll.swift; sourceTree = "<group>"; };
 		D649892A27AC7864001DDC88 /* PlanAWalkAndRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanAWalkAndRoll.swift; sourceTree = "<group>"; };
-		D649892C27AC789D001DDC88 /* WalkAndRollPartners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkAndRollPartners.swift; sourceTree = "<group>"; };
 		D649892E27AC7913001DDC88 /* ContactUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
 		D649893027AC7A36001DDC88 /* MySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettings.swift; sourceTree = "<group>"; };
 		D649893227AC7EC7001DDC88 /* ShortProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortProgressView.swift; sourceTree = "<group>"; };
@@ -110,9 +106,7 @@
 				D6BF314427C41478009BC39C /* DetailView.swift */,
 				B358407027C43CE200562A5D /* DetailView2.swift */,
 				28431D4327C56B9200E03523 /* DetailView4.swift */,
-
 				FE436ACF27C435C2006DC66D /* DetailView5.swift */,
-
 				D6BF314627C41726009BC39C /* OnAWalkView.swift */,
 				FED394E027B1B5AD00F12E7C /* SplashView1.swift */,
 				FED394E227B1B64B00F12E7C /* SplashView2.swift */,
@@ -122,9 +116,7 @@
 				D649893027AC7A36001DDC88 /* MySettings.swift */,
 				FEF65D7927BC4B3A002B2980 /* HiddenNavBar.swift */,
 				D649892E27AC7913001DDC88 /* ContactUs.swift */,
-				D649892C27AC789D001DDC88 /* WalkAndRollPartners.swift */,
 				D649892A27AC7864001DDC88 /* PlanAWalkAndRoll.swift */,
-				D649892827AC77EA001DDC88 /* JoinAWalkAndRoll.swift */,
 				D649892627AB2B71001DDC88 /* MapView.swift */,
 				D649892427AB2B4B001DDC88 /* MapViewModel.swift */,
 				D6BF314827C55CB6009BC39C /* WalkRollModel.swift */,
@@ -212,12 +204,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D649892D27AC789D001DDC88 /* WalkAndRollPartners.swift in Sources */,
 				D649891927AB09A2001DDC88 /* ContentView.swift in Sources */,
 				B358407127C43CE200562A5D /* DetailView2.swift in Sources */,
 				28431D4427C56B9300E03523 /* DetailView4.swift in Sources */,
 				D649892727AB2B71001DDC88 /* MapView.swift in Sources */,
-				D649892927AC77EA001DDC88 /* JoinAWalkAndRoll.swift in Sources */,
 				D6BF314927C55CB6009BC39C /* WalkRollModel.swift in Sources */,
 				D649891727AB09A2001DDC88 /* WalkRollApp.swift in Sources */,
 				D649893127AC7A36001DDC88 /* MySettings.swift in Sources */,

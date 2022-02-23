@@ -77,6 +77,7 @@ struct PlanAWalkAndRoll: View {
                             let mapRegion = mapView.viewModel.region
                             let newWalkRoll = WalkRoll(id: UUID(), name: name, description: description, latitude: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
                             walkRolls.append(newWalkRoll)
+                            presentationMode.wrappedValue.dismiss()
                                 } label: {
                                     Text("Confirm Walk & Roll").fontWeight(.black)
                                 }
@@ -85,6 +86,7 @@ struct PlanAWalkAndRoll: View {
                                 .foregroundColor(.white)
                                 .font(.title2)
                                 .clipShape(RoundedRectangle(cornerRadius: 10))
+                                
                         Spacer()
                     }
                     .padding(.bottom, 5)
@@ -96,29 +98,12 @@ struct PlanAWalkAndRoll: View {
                 .edgesIgnoringSafeArea(.bottom)
                 .toolbar {
                     ToolbarItem(placement: .principal) {
-                        
-                        HStack {
-                            NavigationLink (destination: MySettings()) {
-                                Image(systemName: "gearshape.fill")
-                                    .font(.title3)
-                            }
-                            
-                            Spacer()
                             
                             Text ("Plan A Walk & Roll")
                                 .font(.largeTitle)
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.5)
                                 .frame(maxHeight: .infinity)
-                            
-                            Spacer()
-                            
-                            NavigationLink (destination: PlanAWalkAndRoll()) {
-                                Image(systemName: "plus")
-                                    .font(.title3)
-                            }
-                            
-                        }
                         .background()
                         
                     }
