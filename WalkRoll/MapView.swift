@@ -9,7 +9,7 @@ import MapKit
 import SwiftUI
 
 struct MapView: View {
-    @StateObject private var viewModel = MapViewModel()
+    @StateObject var viewModel = MapViewModel()
     
     var body: some View {
         Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
