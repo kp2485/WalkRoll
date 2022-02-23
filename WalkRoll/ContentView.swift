@@ -13,6 +13,9 @@ struct ContentView: View {
     let screenWidth  = UIScreen.main.bounds.size.width
     let screenHeight = UIScreen.main.bounds.size.height
     
+    @State private var walkRolls = [WalkRoll]()
+    @State private var isPlanAWalkShowing = false
+    
     var body: some View {
         VStack {
             NavigationView {
@@ -24,13 +27,13 @@ struct ContentView: View {
                     MapView()
                         .frame(height: screenWidth)
                     
-                    Text("Upcoming Walk & Rolls")
+                    Text("Nearby Walk & Rolls")
                         .font(.title)
                         .fontWeight(.medium)
                         .padding(.horizontal)
                         .padding(.vertical, 1)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.5)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
                     
                     List {
                         NavigationLink(destination: DetailView()) {
@@ -138,7 +141,9 @@ struct ContentView: View {
                             
                             Spacer()
                             
-                            NavigationLink (destination: PlanAWalkAndRoll()) {
+                            Button(action: {
+                                isPlanAWalkShowing = true
+                            }) {
                                 Image(systemName: "plus")
                                     .font(.title3)
                             }
@@ -173,6 +178,9 @@ struct ContentView: View {
             
         }
         .edgesIgnoringSafeArea(.all)
+        .sheet(isPresented: $isPlanAWalkShowing) {
+            PlanAWalkAndRoll()
+        }
     }
 }
 

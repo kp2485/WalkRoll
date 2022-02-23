@@ -8,7 +8,7 @@
 import MapKit
 
 enum MapDetails {
-    static let startingLocation = CLLocationCoordinate2D (latitude: 42.3314, longitude: 83.0458)
+    static let startingLocation = CLLocationCoordinate2D (latitude: 42.3314, longitude: -83.0458)
     static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
     static let zoomedSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
 }
