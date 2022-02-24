@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		28431D4427C56B9300E03523 /* DetailView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28431D4327C56B9200E03523 /* DetailView4.swift */; };
+		605295B427C5670700941062 /* DetailView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605295B327C5670700941062 /* DetailView3.swift */; };
 		B358407127C43CE200562A5D /* DetailView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B358407027C43CE200562A5D /* DetailView2.swift */; };
 		D64897A727B7057A009B72BC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64897A627B7057A009B72BC /* HealthKit.framework */; };
 		D64897AF27BABC57009B72BC /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64897AE27BABC57009B72BC /* CircularProgressView.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		28431D4327C56B9200E03523 /* DetailView4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView4.swift; sourceTree = "<group>"; };
+		605295B327C5670700941062 /* DetailView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView3.swift; sourceTree = "<group>"; };
 		B358407027C43CE200562A5D /* DetailView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView2.swift; sourceTree = "<group>"; };
 		D64897A327B6F940009B72BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D64897A427B7057A009B72BC /* WalkRoll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalkRoll.entitlements; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				D649891827AB09A2001DDC88 /* ContentView.swift */,
 				D6BF314427C41478009BC39C /* DetailView.swift */,
 				B358407027C43CE200562A5D /* DetailView2.swift */,
+				605295B327C5670700941062 /* DetailView3.swift */,
 				28431D4327C56B9200E03523 /* DetailView4.swift */,
 				FE436ACF27C435C2006DC66D /* DetailView5.swift */,
 				D6BF314627C41726009BC39C /* OnAWalkView.swift */,
@@ -212,6 +215,7 @@
 				D649891727AB09A2001DDC88 /* WalkRollApp.swift in Sources */,
 				D649893127AC7A36001DDC88 /* MySettings.swift in Sources */,
 				D649892B27AC7864001DDC88 /* PlanAWalkAndRoll.swift in Sources */,
+				605295B427C5670700941062 /* DetailView3.swift in Sources */,
 				D6BF314727C41726009BC39C /* OnAWalkView.swift in Sources */,
 				D6E1A23B27BBEE7200A9FBBD /* ActivityFeedView.swift in Sources */,
 				D649892F27AC7913001DDC88 /* ContactUs.swift in Sources */,
