@@ -15,13 +15,17 @@ struct PlanAWalkAndRoll: View {
     
     @Environment(\.presentationMode) var presentationMode
     
-    @State private var walkRolls = [WalkRoll]()
+    @Binding var walkRolls: [WalkRoll]
     @State var name = ""
     @State var description = ""
     
-    var mapView = MapView()
+    var mapView: MapView
     var mapRegion = MKCoordinateRegion()
     
+    init(walkRolls: Binding<[WalkRoll]>) {
+        _walkRolls = walkRolls
+        mapView = MapView(walkRolls: walkRolls.wrappedValue)
+    }
 //    var centerCoordinate: CLLocationCoordinate2D { get set }
     
     var body: some View {
@@ -137,6 +141,6 @@ struct PlanAWalkAndRoll: View {
 
 struct PlanAWalkAndRoll_Previews: PreviewProvider {
     static var previews: some View {
-        PlanAWalkAndRoll()
+        PlanAWalkAndRoll(walkRolls: .constant(WalkRoll.testData))
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct WalkRoll: Identifiable, Codable, Equatable {
     let id: UUID = UUID()
@@ -19,6 +20,9 @@ struct WalkRoll: Identifiable, Codable, Equatable {
 //    var Recurring: Bool
     let latitude: Double
     let longitude: Double
+    var coordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
     
     static let testData = [
         WalkRoll(name: "Boston-Edison AM Crew", description: "This is a Walk & Roll in the Historic Boston-Edison Neighborhood. This area consists of over 900 homes built on four east/west streets, making it one of the largest residential historic districts in the nation. Notable past residents include Henry Ford & Joe Louis. This is a recurring walk at 10 am, every Tuesday & Thursday.", latitude: 42.3799, longitude: -83.1019),

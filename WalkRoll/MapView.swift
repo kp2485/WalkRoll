@@ -10,9 +10,15 @@ import SwiftUI
 
 struct MapView: View {
     @StateObject var viewModel = MapViewModel()
+    var walkRolls: [WalkRoll]
     
     var body: some View {
-        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+        Map(coordinateRegion: $viewModel.region, showsUserLocation: true, annotationItems: walkRolls) { annotation in
+            MapAnnotation(coordinate: annotation.coordinate) {
+                Circle()
+                    .frame(width: 25, height: 25)
+            }
+        }
             .ignoresSafeArea()
             // dot color
             .accentColor(Color(.systemPink))
@@ -24,6 +30,6 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(walkRolls: WalkRoll.testData)
     }
 }

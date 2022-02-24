@@ -24,7 +24,7 @@ struct DetailView: View {
                     Spacer()
                         .frame(height: screenHeight * 0.005)
                     
-                    MapView()
+                    MapView(walkRolls: [WalkRoll])
                         .frame(width: screenWidth, height: screenHeight * 0.50)
                     
                     Text(WalkRoll.name)
@@ -74,10 +74,6 @@ struct DetailView: View {
                     ToolbarItem(placement: .principal) {
                         
                         HStack {
-                            NavigationLink (destination: MySettings()) {
-                                Image(systemName: "gearshape.fill")
-                                    .font(.title3)
-                            }
                             
                             Spacer()
                             
@@ -88,12 +84,7 @@ struct DetailView: View {
                                 .frame(maxHeight: .infinity)
                             
                             Spacer()
-                            
-                            NavigationLink (destination: PlanAWalkAndRoll()) {
-                                Image(systemName: "plus")
-                                    .font(.title3)
-                            }
-                            
+
                         }
                         .background()
                         

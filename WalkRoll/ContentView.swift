@@ -25,7 +25,7 @@ struct ContentView: View {
                     Spacer()
                         .frame(height: screenHeight * 0.005)
                     
-                    MapView()
+                    MapView(walkRolls: walkRolls)
                         .frame(height: screenWidth)
                     
                     Text("Nearby Walk & Rolls")
@@ -55,11 +55,11 @@ struct ContentView: View {
                         }
                         
                         
-                        HStack {
-                            Spacer()
-                            Text("See more...")
-                            Spacer()
-                        }
+//                        HStack {
+//                            Spacer()
+//                            Text("See more...")
+//                            Spacer()
+//                        }
                     }
                     .onAppear(perform: {
                         UITableView.appearance().contentInset.top = -15
@@ -130,7 +130,7 @@ struct ContentView: View {
         }
         .edgesIgnoringSafeArea(.all)
         .sheet(isPresented: $isPlanAWalkShowing) {
-            PlanAWalkAndRoll()
+            PlanAWalkAndRoll(walkRolls: $walkRolls)
         }
         .sheet(isPresented: $isMySettingsShowing) {
             MySettings()
