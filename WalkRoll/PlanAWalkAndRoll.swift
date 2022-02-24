@@ -75,7 +75,7 @@ struct PlanAWalkAndRoll: View {
                         Button {
                             
                             let mapRegion = mapView.viewModel.region
-                            let newWalkRoll = WalkRoll(id: UUID(), name: name, description: description, latitude: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
+                            let newWalkRoll = WalkRoll(name: name, description: description, latitude: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
                             walkRolls.append(newWalkRoll)
                             presentationMode.wrappedValue.dismiss()
                                 } label: {

@@ -13,7 +13,7 @@ struct ContentView: View {
     let screenWidth  = UIScreen.main.bounds.size.width
     let screenHeight = UIScreen.main.bounds.size.height
     
-    @State private var walkRolls = [WalkRoll]()
+    @State private var walkRolls = WalkRoll.testData
     @State private var isPlanAWalkShowing = false
     @State private var isMySettingsShowing = false
     
@@ -37,76 +37,24 @@ struct ContentView: View {
                         .minimumScaleFactor(0.5)
                     
                     List {
-                        NavigationLink(destination: DetailView()) {
-                            HStack {
-                                Text("Boston-Edison AM Crew")
-                                    .font(.title2)
-                                    .layoutPriority(1)
-                                    .lineLimit(2)
-                                Spacer()
-                                Text("0.2 m")
-                                    .font(.body)
-                                    .fontWeight(.light)
-                                    .lineLimit(1)
+                        ForEach(walkRolls) { walkRoll in
+                            NavigationLink(destination: DetailView(WalkRoll: walkRoll)) {
+                                HStack {
+                                    Text(walkRoll.name)
+                                        .font(.title2)
+                                        .layoutPriority(1)
+                                        .lineLimit(2)
+                                    Spacer()
+                                    Text("0.2 m")
+                                        .font(.body)
+                                        .fontWeight(.light)
+                                        .lineLimit(1)
+                                }
+                                .minimumScaleFactor(0.5)
                             }
-                            .minimumScaleFactor(0.5)
                         }
-                        NavigationLink(destination: DetailView()) {
-                            HStack {
-                                Text("Sacred Heart Track")
-                                    .font(.title2)
-                                    .layoutPriority(1)
-                                    .lineLimit(2)
-                                Spacer()
-                                Text("0.5 m")
-                                    .font(.body)
-                                    .fontWeight(.light)
-                                    .lineLimit(1)
-                            }
-                            .minimumScaleFactor(0.5)
-                        }
-                        NavigationLink(destination: DetailView()) {
-                            HStack {
-                                Text("Central HS Track")
-                                    .font(.title2)
-                                    .layoutPriority(1)
-                                    .lineLimit(2)
-                                Spacer()
-                                Text("0.5 m")
-                                    .font(.body)
-                                    .fontWeight(.light)
-                                    .lineLimit(1)
-                            }
-                            .minimumScaleFactor(0.5)
-                        }
-                        NavigationLink(destination: DetailView()) {
-                            HStack {
-                                Text("West Side Walkers")
-                                    .font(.title2)
-                                    .layoutPriority(1)
-                                    .lineLimit(2)
-                                Spacer()
-                                Text("2.2 m")
-                                    .font(.body)
-                                    .fontWeight(.light)
-                                    .lineLimit(1)
-                            }
-                            .minimumScaleFactor(0.5)
-                        }
-                        NavigationLink(destination: DetailView()) {
-                            HStack {
-                                Text("Palmer Park")
-                                    .font(.title2)
-                                    .layoutPriority(1)
-                                    .lineLimit(2)
-                                Spacer()
-                                Text("3.7 m")
-                                    .font(.body)
-                                    .fontWeight(.light)
-                                    .lineLimit(1)
-                            }
-                            .minimumScaleFactor(0.5)
-                        }
+                        
+                        
                         HStack {
                             Spacer()
                             Text("See more...")
