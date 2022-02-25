@@ -103,30 +103,8 @@ struct ContentView: View {
                         .background()
                         
                     }
-                    //                    ToolbarItem(placement: .navigationBarLeading) {
-                    //                        NavigationLink(destination: MySettings()) {
-                    //                            Text ("My Settings")
-                    //                        }
-                    //                    }
-                    //                    ToolbarItem(placement: .navigationBarTrailing) {
-                    //                        NavigationLink(destination: MySettings()) {
-                    //                            Text ("Plan a Walk & Roll")
-                    //                        }
-                    //                    }
                 }
             }
-            
-            //            Text("Today is a great day to get outside! ⛅️")
-            //                .italic()
-            //                .fontWeight(.light)
-            //                .font(.title3)
-            //                .padding(.top)
-            //                .multilineTextAlignment(.leading)
-            
-            //            ShortProgressView()
-            
-            //            ActivityFeedView()
-            
         }
         .edgesIgnoringSafeArea(.all)
         .sheet(isPresented: $isPlanAWalkShowing) {
