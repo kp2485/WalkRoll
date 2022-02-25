@@ -15,8 +15,10 @@ struct MapView: View {
     var body: some View {
         Map(coordinateRegion: $viewModel.region, showsUserLocation: true, annotationItems: walkRolls) { annotation in
             MapAnnotation(coordinate: annotation.coordinate) {
-                Circle()
-                    .frame(width: 25, height: 25)
+                    Image(systemName: "location.magnifyingglass")
+                        .frame(width: 30, height: 30)
+                        .offset(x: 2, y: 2)
+                        .foregroundColor(.primary)
             }
         }
             .ignoresSafeArea()
