@@ -328,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WalkRoll/WalkRoll.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"WalkRoll/Preview Content\"";
 				DEVELOPMENT_TEAM = 588PCRUA35;
 				ENABLE_PREVIEWS = YES;
@@ -337,6 +337,7 @@
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app uses your step data to measure activity goals.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app uses your step data to help you set and achieve walking goals.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your location is used to populate a list of Walk & Rolls near you.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your location to find Walk & Rolls nearby.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -363,7 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WalkRoll/WalkRoll.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"WalkRoll/Preview Content\"";
 				DEVELOPMENT_TEAM = 588PCRUA35;
 				ENABLE_PREVIEWS = YES;
@@ -372,6 +373,7 @@
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app uses your step data to measure activity goals.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app uses your step data to help you set and achieve walking goals.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your location is used to populate a list of Walk & Rolls near you.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your location to find Walk & Rolls nearby.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
